@@ -17,6 +17,8 @@
 
 #include "flags.h"
 
-void helper();
+void printi(const char* path, int indent);
+
+void helpme();
 
 #endif // PRINTS_H

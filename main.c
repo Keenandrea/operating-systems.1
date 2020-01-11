@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
         switch(ch)
         {
             case 'h':
-                helper();
+                helpme();
                 return 0;
             case 'I':
                 optI = 1;
@@ -88,10 +88,13 @@ int main(int argc, char *argv[])
        {
            dirname = cwd;
        } else {
-           perror("getcwd() error");
+           perror("error");
            exit(0);
        }
     }
     printf("dirname: %s", dirname);
+
+    printi(dirname, 0);
+
     return 0;
 }
