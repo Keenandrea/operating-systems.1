@@ -1,3 +1,5 @@
+#define _BSD_SOURCE
+
 #include "flags.h"
 
 int opth; // help

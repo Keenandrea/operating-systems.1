@@ -1,4 +1,3 @@
-#include "flags.h"
 #include "prints.h"
 
 int main(int argc, char *argv[])
@@ -6,7 +5,7 @@ int main(int argc, char *argv[])
     init();
     int it;
     int ch;
-    
+
     while( (ch = getopt(argc,argv,"hI:Ltpiugsdl")) != -1 )
     {
         switch(ch)
@@ -92,9 +91,9 @@ int main(int argc, char *argv[])
            exit(0);
        }
     }
-    printf("dirname: %s", dirname);
+    //printf("dirname: %s", dirname);
 
-    printi(dirname, 0);
+    filesystem(dirname, 0);
 
     return 0;
 }

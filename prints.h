@@ -2,11 +2,12 @@
 #define PRINTS_H
 
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 #include <unistd.h>
+
+#include <string.h>
 #include <dirent.h>
 #include <errno.h>
-#include <stdlib.h>
 #include <time.h>
 #include <sys/stat.h>
 #include <sys/types.h>
@@ -17,7 +18,15 @@
 
 #include "flags.h"
 
-void printi(const char* path, int indent);
+int isdir(const char* path);
+
+void catenater(int* marker, const char* datum);
+
+void printi(const char* path, const char* fname, int indent);
+
+void printe();
+
+void filesystem(const char* path, int indent);
 
 void helpme();
 

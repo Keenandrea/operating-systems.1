@@ -7,6 +7,14 @@
 #include <unistd.h>
 #include <limits.h>
 
+/* if you put variables in
+   a .c file and extern th
+   same variables in th .h
+   file, only the one .o f
+   ile will contain the da
+   ta, causing a smaller f
+   inal executable      */
+
 /* explanation of opt[I-l] 
    can be found in file na
    med flags.c          */

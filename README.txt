@@ -1,5 +1,7 @@
 Purpose:
-	The purpose of this program is to familiarize yourself with using getopt and perror while practicing system calls.
+	The purpose of this program is to familiarize 
+    yourself with using getopt and perror while p
+    racticing system calls.
 
 How to Run:	
 	make		//to compile
